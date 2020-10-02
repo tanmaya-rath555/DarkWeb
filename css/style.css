@@ -1,0 +1,464 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #091229;
+    color: aqua;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100%;
+}
+
+img{
+    max-width: 100%;
+}
+.container{
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ---------------------- Header  ---------------------- */
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li a{
+    font-size: 1.1em;
+    color: aqua;
+    transition: all 0.5s;
+    padding: 10px;
+    font-weight: bold;
+}
+
+header nav ul li a:hover{
+    border-bottom: 1px solid #b300ff;
+    border-radius: 20%;
+    color: #b300ff;
+}
+
+header .btns .btn-1{
+    color: #091229;
+    padding: 8px 30px;
+    background: aqua;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0 5px;
+    transition: all 0.4s;
+}
+header .btns .btn-2{
+    color: aqua;
+    padding: 8px 30px;
+    border: 1px solid aqua;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0 5px;
+    transition: all 0.4s;
+}
+
+header .btns .btn-1:hover{
+    border: 1px solid aqua;
+    background: transparent;
+    color: aqua;
+}
+header .btns .btn-2:hover{
+    background: aqua;
+    color: #091229;
+}
+
+/* ---------------------- Showcase  ---------------------- */
+
+.showcase{
+    height: 100vh;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.showcase h1{
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+.showcase input{
+    width: 250px;
+    height: 40px;
+    padding: 0 15px;
+    outline: none;
+    border: none;
+    border-top-left-radius: 10px;
+    font-size: 20px;
+}
+
+.showcase label{
+    background: aqua;
+    color: #091229;
+    margin-left: -4px;
+    padding: 8.5px 30px 10px 30px;
+    font-size: 20px;
+    border-bottom-right-radius: 10px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.showcase label:hover{
+    background: #b300ff;
+    cursor: pointer;
+}
+
+/* ---------------------- Gallery  ---------------------- */
+
+.gallery{
+    text-align: center;
+}
+
+.gallery h1{
+    font-size: 2.5em;
+}
+
+.gallery .gallery-img{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin: 100px 0;
+}
+
+.gallery-img .car img{
+    width: 550px;
+    opacity: 0.7;
+    filter: blur(0.7px);
+    transition: all 0.5s;
+}
+
+.gallery-img .car img:hover{
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 10px;
+    filter: blur(0px)
+}
+
+.info-car {
+    position: relative;
+}
+
+.info-car .btn-car{
+    color: aqua;
+    font-size: 2em;
+    position: absolute;
+    left: 25%;
+    margin: 20px;
+    border: 2px solid aqua;
+    padding: 5px 10px;
+    transition: all 0.4s;
+}
+
+.info-car .btn-car:hover{
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #b300ff;
+    border-color: #b300ff;
+}
+
+.info-car{
+    align-self: center;
+    justify-self: center;
+}
+.info-car h1 , p{
+    width: 450px;
+    text-align: center;
+}
+
+.info-car h1{
+    margin: 0 0 10px 0;
+}
+.info-car p {
+    font-size: 1.1em;
+}
+
+/* --------------- Icons --------------- */
+
+.icon{
+    text-align: center;
+    padding: 150px 0;
+}
+
+.icon .icons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
+}
+.icon h1{
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+.icon .icons a{
+    display: block;
+    font-size: 5em;
+    color: aqua;
+    margin: 10px 0;
+    transition: all 0.5s;
+}
+
+.icon .icons a:hover{
+    color: #b300ff;
+}
+.icon .icons span{
+    font-size: 2.2em;
+}
+
+/* --------------- More Cars ! --------------- */
+
+.more-cars{
+    height: 350px;
+    background: linear-gradient(90deg, #00ffff, #b300ff);
+    color: #091229;
+    text-align: center;
+}
+
+.more-cars h2{
+    margin-top: 115px;
+    font-size: 2.5em;
+}
+
+.more-cars button{
+    font-size: 2em;
+    color: aqua;
+    margin: 40px 0;
+    padding: 10px 30px;
+    border: none;
+    background: #091229;
+    transition: all 0.5s;
+}
+.more-cars button:hover{
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+}
+
+/* --------------- Footer --------------- */
+
+footer{
+    margin: 50px 0 20px 0;
+    padding: 20px 0;
+    border-top: 1px solid aqua;
+    border-bottom: 1px solid aqua;
+    text-align: center;
+}
+
+footer .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr)
+}
+footer a{
+    display: block;
+}
+
+.features h2{
+    font-size: 2em;
+    color: aqua;
+    margin: 10px 0;
+}
+
+.features a{
+    margin: 10px 0;
+    color: aqua;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: underline;   
+}
+
+.address h2{
+    font-size: 2em;
+    color: aqua;
+    margin: 10px 0;
+}
+
+.address a{
+    margin: 10px 0;
+    color: aqua;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: underline;   
+}
+
+.contact h2{
+    font-size: 2em;
+    color: aqua;
+    margin: 10px 0;
+}
+
+.contact a{
+    margin: 10px 0;
+    color: aqua;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.socials h2{
+    font-size: 2em;
+    color: aqua;
+    margin: 10px 0;
+}
+
+.socials a{
+    display: inline;
+    margin: 10px ;
+    color: aqua;
+    font-size: 1.8em;
+}
+
+.socials a i{
+    transition: all 0.5s;
+}
+
+.socials a i:hover{
+    color: #b300ff;
+    transform: rotate(360deg);
+}
+
+.copy-right{
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 25px;
+}
+
+/* --------------- @media  --------------- */
+
+@media (max-width: 1000px){
+    .gallery .gallery-img{
+        grid-template-columns: 1fr;
+    }
+    .sp1, .sp2{
+        margin: 0 0 80px 0;
+    }
+    footer .container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .showcase{
+        height: 70vh;
+    }
+    
+}
+
+.menu-bar{
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: none;
+    z-index: 21;
+}
+.menu-bar:hover{
+    color: #b300ff;
+}
+
+@media (max-width: 680px){
+    .menu-bar{
+        display: block;
+    }
+    header nav ul{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient( #00ffff, #b300ff);
+        z-index: 1;
+        transform: translateX(-1000px);
+        transition: all 0.5s;
+    }
+
+    header nav ul li a{
+        color: #091229;
+        display: flex;
+        justify-content: center;
+        margin: 50px 0;
+        font-size: 2em;
+    }
+    header nav ul li a:hover{
+        border: none;
+        transform: scale(1.5)
+    }
+
+    header nav ul.menu.show{
+        transform: translateX(0)
+    }
+
+    .showcase h1{
+        font-size: 1.2em;
+    }
+    .showcase input {
+        width: 150px;
+    }
+    .showcase label{
+        padding:  12px 10px;
+        font-size: 1em
+    }
+    .showcase{
+        height: 50vh;
+    }
+    .info-car .btn-car{
+        left: 18%;
+    }
+    .info-car h1,p{
+        width: 350px;
+    }
+    .info-car h1{
+        font-size: 2em;
+    }
+    .icon{
+        padding: 0 0 30px 0;
+    }
+    .icon .icons{
+        grid-template-columns: 1fr;
+    }
+    .icon .icons div{
+        margin: 30px 0;
+    }
+    footer .container{
+        grid-template-columns: 1fr;
+    }
+    .gallery h1{
+        font-size: 1.5em
+    }
+    .gallery p{
+        font-size: 0.9em;
+    }
+    .icon h1{
+        font-size: 2em;
+    }
+    .more-cars{
+        height: 280px;
+    }
+    .more-cars h2{
+        margin-top: 70px;
+        font-size: 2em;
+    }
+    .copy-right{
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/Font-Awesome.css">
+  <title>Loading Page</title>
+</head>
+<body>
+    <div class="menu-bar">
+        <i class="fa fa-bars"></i>
+      </div>
+  <!-- ========= Header & Menu ========= -->
+
+  <header>
+    <div class="container">
+      <nav>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <div class="btns">
+          <a href="#" class="btn-1" >Buy</a>
+          <a href="#" class="btn-2">Sell</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+ 
+  <!-- ========= Showcase ========= -->
+
+  <section class="showcase">
+    <div class="container">
+      <div class="image">
+        <img src="./img/showcase.png" alt="car">
+      </div>
+      <div class="subscribe">
+        <h1>For The Latest News Subscribe</h1>
+        <input type="email" class="email">
+        <label for="#">Subscribe</label>
+      </div>
+   </div>
+  </section>
+
+    <!-- ========= Gallery ========= -->
+
+    <section class="gallery">
+      <div class="container">
+        <h1>Cars Gallery</h1>
+        <div class="gallery-img">
+          <div class="car">
+            <img src="./img/car/Lamborghini-car.jpg" alt="">
+          </div>
+          <div class="info-car">
+            <h1>Lamborghini</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, numquam laboriosam dicta fugiat nulla expedita voluptates ipsum. Quibusdam laboriosam eveniet pariatur totam dolorum voluptas a quis tempore facilis! Ab, repudiandae.</p>
+            <a href="#" class="btn-car">Order Now!</a>
+          </div>
+        </div>
+        <div class="gallery-img">
+            <div class="info-car sp1">
+              <h1>BMW</h1>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, numquam laboriosam dicta fugiat nulla expedita voluptates ipsum. Quibusdam laboriosam eveniet pariatur totam dolorum voluptas a quis tempore facilis! Ab, repudiandae.</p>
+              <a href="#" class="btn-car">Order Now!</a>
+            </div>
+            <div class="car">
+                <img src="./img/car/bmw-car.jpg" alt="">
+              </div>
+          </div>
+          <div class="gallery-img">
+              <div class="car">
+                <img src="./img/car/drifty-car.jpg" alt="">
+              </div>
+              <div class="info-car">
+                <h1>Drifty</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, numquam laboriosam dicta fugiat nulla expedita voluptates ipsum. Quibusdam laboriosam eveniet pariatur totam dolorum voluptas a quis tempore facilis! Ab, repudiandae.</p>
+                <a href="#" class="btn-car">Order Now!</a>
+              </div>
+            </div>
+            <div class="gallery-img">
+                <div class="info-car sp2">
+                  <h1>Porche</h1>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, numquam laboriosam dicta fugiat nulla expedita voluptates ipsum. Quibusdam laboriosam eveniet pariatur totam dolorum voluptas a quis tempore facilis! Ab, repudiandae.</p>
+                  <a href="#" class="btn-car">Order Now!</a>
+                </div>
+                <div class="car">
+                    <img src="./img/car/porche-car.jpg" alt="">
+                  </div>
+              </div>
+      </div>
+    </section>
+
+   <!-- ========= Icons ========= -->
+
+   <section class="icon">
+     <div class="container">
+       <h1>Features</h1>
+       <div class="icons">
+          <div>
+            <a href="#"><i class="fab fa-get-pocket"></i></a>
+            <span>Safe</span>
+          </div>
+          <div>
+            <a href="#"><i class="fa fa-rocket"></i></a>
+            <span>Fast</span>
+          </div>
+          <div>
+            <a href="#"><i class="fa fa-lock"></i></a>
+            <span>Secure</span>
+          </div>
+       </div>
+     </div>
+   </section>
+
+      <!-- ========= More Cars ========= -->
+
+   <section class="more-cars">
+     <div class="container">
+       <h2>See More New Cars!</h2>
+       <button href="#">See More!</button>
+     </div>
+   </section>
+
+   <!-- ========= Footer ========= -->
+
+   <footer>
+     <div class="container">
+       <div class="features">
+         <h2>Features</h2>
+         <a href="#">Secure</a>
+         <a href="#">Fast</a>
+         <a href="#">Safe</a>
+       </div>
+       <div class="address">
+         <h2>Address</h2>
+          <a href="#">New York</a>
+          <a href="#">Mr.Ayoubi Shop</a>
+        </div>
+        <div class="contact">
+          <h2>Contact</h2>
+            <a href="#">Number: 555-555-555</a>
+            <a href="#">Email: Cars@mail.com</a>
+          </div>
+          <div class="socials">
+              <h2>Socials Pages</h2>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+              </div>
+     </div>
+   </footer>
+   <p class="copy-right">All Right Reserved By Lord CodeR &copy; 2020</p>
+
+
+   <script>
+     let menu = document.querySelector('.menu-bar');
+    menu.addEventListener('click', function(){
+      document.querySelector('.menu').classList.toggle('show');
+      menu.style.color = '#b300ff';
+    });
+   </script>
+</body>
+</html>
